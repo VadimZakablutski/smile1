@@ -59,4 +59,5 @@ rot.pack(side=RIGHT)
 nos.pack(side=RIGHT)
 glaz1.pack(side=RIGHT)
 glaz2.pack(side=RIGHT)
+#==
 tk.mainloop()
