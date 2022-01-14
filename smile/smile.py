@@ -3,18 +3,9 @@ def golova():
         global var_golova
         global c
         if var_golova.get()=="1":
-            c.destroy()
-        else:
-            var_golova=StringVar()
-            c = Canvas(tk, width=1000, height=500, bg="white") 
-            c.create_oval((15,15,450,500))
-            c.create_oval((125,100,175,150))
-            c.create_oval((250,100,300,150))
-            c.create_arc((175,200,350,350))
-            c.create_arc((100,350,350,350), style=CHORD, start=0, extent=150)
-            c.pack(side=LEFT)
-            c.pack()
-            var_golova.get()=="0"
+            c.create_oval((15,15,450,500),fill="white")
+        elif var_golova.get()=="0":
+            c.create_oval((15,15,450,500),outline="black")
 tk = Tk()
 fm=Frame(tk)
 fm.pack(side=RIGHT)
